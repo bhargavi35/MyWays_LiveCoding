@@ -1,0 +1,22 @@
+// MyWays Live Coding Challenge (13th April)
+// Fizz Buzz function
+
+function fizzBuzz(sol) {
+    const sum = sol.split('').reduce((a, s) => a + parseInt(s), 0);
+
+    for (let i = 1; i <= sum; i++) {
+        if (i % 4 === 0 && i % 5 === 0) {
+            console.log('FizzBuzz');
+        } else if (i % 4 === 0) {
+            console.log('Fizz');
+        } else if (i % 5 === 0) {
+            console.log('Buzz');
+        } else {
+            console.log(i);
+        }
+    }
+}
+
+fizzBuzz('9391057631');
+fizzBuzz('9000000099');
+
